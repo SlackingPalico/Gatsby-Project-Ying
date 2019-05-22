@@ -1,17 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-import GoogleChromeSVG from "../../public/images/GoogleChrome.svg"
+// import GoogleChromeSVG from "../../public/images/GoogleChrome.svg"
 
 const Header = () => {
   return (
     <div>
       <nav className="navbar">
         <ul className="navbar__ul">
-          <li>
+          {/* <li>
             <Link className="navbar__link" activeClassName="navbar__linkActive" to="/">
               <img className="GoogleChrome" src={GoogleChromeSVG} alt="hehe" />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className="navbar__link" activeClassName="navbar__linkActive" to="/">
               Home

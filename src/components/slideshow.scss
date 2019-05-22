@@ -1,0 +1,104 @@
+.slider__container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider__item__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slider__item__container.current {
+  opacity: 1;
+}
+
+.slider__item__container:first-child {
+  background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
+    center top/cover;
+}
+
+.slider__item__container:nth-child(2) {
+  background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat
+    center top/cover;
+}
+
+.slider__item__container:nth-child(3) {
+  background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
+    center top/cover;
+}
+
+.slider__item__container:nth-child(4) {
+  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
+    center top/cover;
+}
+
+.slider__item__container:nth-child(5) {
+  background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
+    center top/cover;
+}
+
+.slider__item__content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+  opacity: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.slider__item__content h1 {
+  margin-bottom: 10px;
+}
+
+.slider__item__container.current .slider__item__content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media (max-width: 500px) {
+  .slider__item__content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.slider__button__container button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slider__button__container button:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+#slider__button__prev {
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  line-height: 0px;
+}
+
+#slider__button__next {
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  line-height: 0px;
+}

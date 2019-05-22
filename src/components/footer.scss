@@ -1,0 +1,17 @@
+.footer__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  height: 6vh;
+  position: relative;
+}
+
+.footer__container__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
+}

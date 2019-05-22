@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web&display=swap');
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Titillium Web", "Montserrat", sans-serif;
+  transition: background-color 0.5s;
+  overflow-y: scroll;
+}

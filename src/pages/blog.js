@@ -20,6 +20,7 @@ const BlogPage = () => {
 `)
 
   console.log(data)
+  console.log(data.allContentfulBlogPost.edges)
 
   return (
     <Layout>

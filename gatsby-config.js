@@ -11,6 +11,24 @@ module.exports = {
     siteAuthor: 'Erik Claesson'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: process.env.MYSQL_HOST,
+          user: process.env.MYSQL_USER,
+          password: process.env.MYSQL_PASSWORD,
+          database: process.env.MYSQL_DATABASE
+        },
+        queries: [
+          {
+            statement: 'SELECT * FROM country',
+            idFieldName: 'Code',
+            name: 'country'
+          }
+        ]
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',

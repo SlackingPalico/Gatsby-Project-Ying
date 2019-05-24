@@ -20,7 +20,6 @@ export const query = graphql`
           contentful_id
           fluid(maxWidth: 613) {
             base64
-            tracedSVG
             aspectRatio
             src
             srcSet
@@ -28,7 +27,6 @@ export const query = graphql`
           }
           fixed {
             base64
-            tracedSVG
             aspectRatio
             width
             height

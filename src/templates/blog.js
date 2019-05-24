@@ -9,7 +9,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       textFieldTitle
-      publishedDate(fromNow: true, locale: "sv")
+      publishedDate(fromNow: true, locale: "en")
       richTextBody {
         json
       }

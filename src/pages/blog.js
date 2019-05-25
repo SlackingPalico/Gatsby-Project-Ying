@@ -12,7 +12,7 @@ const BlogPage = () => {
         node {
           textFieldTitle
           slug
-          publishedDate(fromNow: true, locale: "sv")
+          publishedDate(fromNow: true, locale: "en")
         }
       }
     }

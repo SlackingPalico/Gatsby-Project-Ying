@@ -20,7 +20,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```sh
     cd Gatsby-Project-Ying/
-    gatsby develop
+    gatsby develop or npm start develop
     ```
 
 1.  **Open the source code and start editing!**

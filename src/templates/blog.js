@@ -18,20 +18,11 @@ export const query = graphql`
       edges {
         node {
           contentful_id
-          fluid(maxWidth: 613) {
-            base64
-            aspectRatio
-            src
-            srcSet
-            sizes
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyContentfulFluid_withWebp
           }
           fixed {
-            base64
-            aspectRatio
-            width
-            height
-            src
-            srcSet
+            ...GatsbyContentfulFixed_withWebp
           }
         }
       }

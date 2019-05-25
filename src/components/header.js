@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <div>
-      <nav className="navbar">
+    <nav>
+      <div className="navbar">
         <ul className="navbar__ul">
           {/* <li>
             <Link className="navbar__link" activeClassName="navbar__linkActive" to="/">
@@ -13,27 +13,52 @@ const Header = () => {
             </Link>
           </li> */}
           <li>
-            <Link className="navbar__link" activeClassName="navbar__linkActive" to="/">
+            <Link
+              className="navbar__link"
+              activeClassName="navbar__linkActive"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link className="navbar__link" activeClassName="navbar__linkActive" to="/blog">
+            <Link
+              className="navbar__link"
+              activeClassName="navbar__linkActive"
+              to="/blog"
+            >
               Blog
             </Link>
           </li>
           <li>
-            <Link className="navbar__link" activeClassName="navbar__linkActive" to="/about">
+            <Link
+              className="navbar__link"
+              activeClassName="navbar__linkActive"
+              to="/about"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link className="navbar__link" activeClassName="navbar__linkActive" to="/contact">
+            <Link
+              className="navbar__link"
+              activeClassName="navbar__linkActive"
+              to="/contact"
+            >
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              className="navbar__link"
+              activeClassName="navbar__linkActive"
+              to="/database"
+            >
+              Database
+            </Link>
+          </li>
         </ul>
-      </nav>
+      </div>
 
       <div className="menu-wrap">
         <input className="toggler" type="checkbox" />
@@ -64,12 +89,17 @@ const Header = () => {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link className="menu__link" to="/database">
+                    Database
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

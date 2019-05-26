@@ -3,7 +3,7 @@ import Head from "../components/head"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Img from "gatsby-image"
+import Image from "gatsby-image"
 
 export const query = graphql`
   query($slug: String!) {
@@ -55,7 +55,7 @@ const Blog = props => {
         // console.log(props.data.allContentfulAsset.edges.node.id[0])
         return (
           <div className="OptionsBlock">
-            <Img
+            <Image
               fluid={props.data.allContentfulAsset.edges[0].node.fluid}
               alt={alt}
               id={testID}

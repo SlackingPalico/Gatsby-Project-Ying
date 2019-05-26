@@ -43,6 +43,12 @@ module.exports = {
         // Accepts all options defined by `babel-plugin-emotion` plugin.
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `cwtheflash`,
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
